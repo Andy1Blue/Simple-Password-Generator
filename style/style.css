@@ -1,0 +1,77 @@
+h1 {
+    font-size: 36px;
+    color: #555555;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e2e2e2;
+}
+
+#loader{
+    position: fixed;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    overflow:hidden;
+    visibility: hidden; 
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#FFFFFF;
+}
+
+input[type=checkbox] {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 30px;
+    border: 1px solid ccc;
+}
+
+input[type=text] {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 1px solid ccc;
+    color: red;
+    font-size: 26px;
+    width: 99%;
+}
+
+button {
+    border: 1px solid ccc;
+    padding: 5px;
+    font-size: 26px;
+    width: 100%;
+    height: 60px;
+}
+
+div {
+    background: gray;
+    padding: 10px;
+    margin: 10px;
+    height: 100%;
+}
+
+small {
+    font-size: 10px;
+    color: grey;
+}
+
+span {
+    color: whitesmoke;
+    padding: 10px;
+}
+
+#options-div {
+    background: whitesmoke;
+    border-style: solid;
+    border-width: 1px;
+}
+
+footer {
+    font-size: 10px;
+    padding: 10px;
+}
