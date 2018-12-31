@@ -1,26 +1,110 @@
 h1 {
     font-size: 36px;
     color: #555555;
+    height:100%;
+    line-height: 30px;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: sans-serif;
     background-color: #e2e2e2;
+    line-height: 100%;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    color: #1a1a1a;
+    border-width: 0;
 }
 
-#loader{
+.header {
+    background-color: #fff;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: #fff;
+    box-shadow: 0 -25px 13px 20px #000;
+    position: inherit;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+}
+
+.header ul {
+    list-style-type: none;
+    text-align: right;
+    padding-right: 50px;
+}
+
+.header ul li {
+    display: inline-block;
+    padding: 10px 10px 0 10px;
+}
+
+.header ul li a {
+    color:#ff0000;
+    text-transform: uppercase;
+    font-weight: 1000 !important;
+    font-size: 12px;
+}
+
+.header .logo {
+    text-align: left;
+    margin:5px;
+    padding: 0 0 0 0px;
+    float: left;
+}
+  
+.header .logo img {
+    width: 50px;
+}
+
+.content {
+    background: gray;
+    margin: 40px;
+    padding: 50px;
+    height: 100%;
+}
+
+.options {
+    background: whitesmoke;
+    border-style: solid;
+    border-width: 1px;
+    padding: 30px;
+    width:200px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .content {
+        background: gray;
+        margin: 10px;
+        padding: 10px;
+        height: 100%;
+    }
+
+    .options {
+        background: whitesmoke;
+        border-style: solid;
+        border-width: 1px;
+        padding: 30px;
+        width:auto;
+    }
+}
+
+
+
+#loader {
     position: fixed;
-    top:0;
-    bottom:0;
-    right:0;
-    left:0;
-    overflow:hidden;
-    visibility: hidden; 
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    overflow: hidden;
+    visibility: hidden;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    color:#FFFFFF;
+    color: #FFFFFF;
 }
 
 input[type=checkbox] {
@@ -48,13 +132,6 @@ button {
     height: 60px;
 }
 
-div {
-    background: gray;
-    padding: 10px;
-    margin: 10px;
-    height: 100%;
-}
-
 small {
     font-size: 10px;
     color: grey;
@@ -65,13 +142,8 @@ span {
     padding: 10px;
 }
 
-#options-div {
-    background: whitesmoke;
-    border-style: solid;
-    border-width: 1px;
-}
-
 footer {
-    font-size: 10px;
+    text-align: center;
+    font-size: 12px;
     padding: 10px;
 }

@@ -53,8 +53,8 @@ function copyPassword() {
 }
 
 $(function () {
-    $("#options-div").toggle();
+    $(".options").toggle();
     $("#options-span").click(function () {
-        $("#options-div").slideToggle(500);
+        $(".options").slideToggle(500);
     });
 });
