@@ -1,0 +1,28 @@
+{
+  "name": "simple-password-generator",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000S\u0000i\u0000m\u0000p\u0000l\u0000e\u0000-\u0000P\u0000a\u0000s\u0000s\u0000w\u0000o\u0000r\u0000d\u0000-\u0000G\u0000e\u0000n\u0000e\u0000r\u0000a\u0000t\u0000o\u0000r\u0000\r\u0000 \u0000",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Andy1Blue/Simple-Password-Generator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Andy1Blue/Simple-Password-Generator/issues"
+  },
+  "homepage": "https://github.com/Andy1Blue/Simple-Password-Generator#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-terser": "^1.2.0",
+    "gulp-uglify": "^3.0.2"
+  }
+}

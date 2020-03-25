@@ -1,17 +1,18 @@
 function generatePassword() {
-  let checkboxSmall = document.getElementById('small');
-  let checkboxBig = document.getElementById('big');
-  let checkboxSpecialSymbol = document.getElementById('special');
-  let checkboxSymbol = document.getElementById('symbol');
-  let checkboxNumber = document.getElementById('number');
-  let passwordLength = document.getElementById('length').value;
+  const checkboxSmall = document.getElementById('small');
+  const checkboxBig = document.getElementById('big');
+  const checkboxSpecialSymbol = document.getElementById('special');
+  const checkboxSymbol = document.getElementById('symbol');
+  const checkboxNumber = document.getElementById('number');
+  const passwordLength = document.getElementById('length').value;
+  const pa = document.getElementById('pass');
 
+  const possibleSmall = 'abcdefghijklmnopqrstuvwxyz';
+  const possibleBig = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+  const possibleNumber = '0123456789';
+  const possibleSymbol = '!@#$%&';
+  const possibleSpecialSymbol = '*()_+{}:<>?[]';
   let newPass = '';
-  let possibleSmall = 'abcdefghijklmnopqrstuvwxyz';
-  let possibleBig = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-  let possibleNumber = '0123456789';
-  let possibleSymbol = '!@#$%&';
-  let possibleSpecialSymbol = '*()_+{}:<>?[]';
 
   for (let i = 0; i < passwordLength; i++) {
     if (checkboxSmall.checked === true) {
@@ -47,18 +48,17 @@ function generatePassword() {
 
   newPass = newPass.substring(0, passwordLength);
 
-  let pa = document.getElementById('pass');
   pa.value = newPass;
 }
 
 function copyPassword() {
-  let copyPassword = document.getElementById('pass');
+  const copyPassword = document.getElementById('pass');
 
   copyPassword.select();
 
   document.execCommand('copy');
 
-  alert('Copied the password: ' + copyPassword.value);
+  alert(`Copied the password: ${copyPassword.value}`);
 }
 
 $(function() {
