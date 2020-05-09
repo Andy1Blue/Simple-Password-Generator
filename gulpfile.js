@@ -12,7 +12,7 @@ gulp.task('css', function() {
 
 gulp.task('js', function() {
     return gulp.src('src/js/**/*.js')
-    .pipe(concat('script.js'))
+    .pipe(concat('main.js'))
     .pipe(terser())
     .pipe(gulp.dest('dist/js'));
 });

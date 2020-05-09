@@ -18,15 +18,6 @@ body {
     border-width: 0;
 }
 
-button {
-    font-family: 'Open Sans',sans-serif;
-    border-style: solid;
-    border-width:1px;
-    padding: 5px;
-    font-size: 20px;
-    width: 100%;
-    height: 60px;
-}
 
 input[type=text] {
     font-family: 'Open Sans',sans-serif;
@@ -41,63 +32,13 @@ input[type=text] {
     text-align: center;
 }
 
-.header {
-    background-color: #fff;
-    border-width: 0 0 1px 0;
-    border-style: solid;
-    border-color: #fff;
-    box-shadow: 0 -25px 13px 20px #000;
-    position: inherit;
-    top: 0;
-    left: 0;
-    width: 100%-20px;
-    padding: 20px;
-}
-
-.header ul {
-    list-style-type: none;
-    text-align: right;
-    padding-right: 50px;
-}
-
-.header ul li {
-    display: inline-block;
-    padding: 10px 10px 0 10px;
-}
-
-.header ul li a {
-    color:#ff0000;
-    text-transform: uppercase;
-    font-weight: 1000 !important;
-    font-size: 12px;
-}
-
-.header .logo {
-    text-align: left;
-    margin:5px;
-    padding: 0 0 0 0px;
-    float: left;
-}
-  
-.header .logo img {
-    width: 50px;
-}
-
 .content {
     background: gray;
     margin: 40px;
     padding: 50px;
     height: 100%;
-}
-
-.options {
-    background: whitesmoke;
-    border-style: solid;
-    border-width: 1px;
-    padding: 30px;
-    width:200px;
-}
-
+  }
+  
 @media only screen and (max-width: 1000px) {
     .content {
         background: gray;
@@ -114,8 +55,6 @@ input[type=text] {
         width:auto;
     }
 }
-
-
 
 #loader {
     position: fixed;
@@ -150,8 +89,4 @@ span {
     padding: 10px;
 }
 
-footer {
-    text-align: center;
-    font-size: 12px;
-    padding: 10px;
-}
+
