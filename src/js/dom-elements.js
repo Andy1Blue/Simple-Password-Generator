@@ -5,6 +5,5 @@ const checkboxSymbol = document.getElementById('symbol');
 const checkboxNumber = document.getElementById('number');
 const passwordInput = document.getElementById('pass');
 const passwordLength = document.getElementById('length').value;
-const pa = document.getElementById('pass');
 const optionButton = document.getElementById('optionButton');
 const optionModal = document.getElementById('optionModal');
