@@ -4,7 +4,9 @@ function copyPassword() {
     copyPassword.select();
   
     document.execCommand('copy');
-  
+
+    copyPassword.blur();
+
     alert(`Copied the password: ${copyPassword.value}`);
   }
   
