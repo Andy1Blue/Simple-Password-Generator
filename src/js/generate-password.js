@@ -34,5 +34,5 @@ function generatePassword() {
   }
 
   newPassword = newPassword.substring(0, passwordLength);
-  pa.value = newPassword;
+  passwordInput.value = newPassword;
 }

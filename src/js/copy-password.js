@@ -1,12 +1,9 @@
 function copyPassword() {
-    const copyPassword = document.getElementById('pass');
-  
-    copyPassword.select();
-  
-    document.execCommand('copy');
+  passwordInput.select();
 
-    copyPassword.blur();
+  document.execCommand('copy');
 
-    alert(`Copied the password: ${copyPassword.value}`);
-  }
-  
+  passwordInput.blur();
+
+  alert(`Copied the password: ${passwordInput.value}`);
+}
