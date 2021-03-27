@@ -10,21 +10,10 @@
   <body onload="generatePassword()">
     <div class="header">
       <div class="header__logo">
-        <img
-          src="images/iconfinder_lock_safe_password_2992204.png"
-          alt="Logo"
-        />
-        <h1>
-          Password Generator
-        </h1>
+        <img src="images/iconfinder_lock_safe_password_2992204.png" alt="Logo" />
+        <h1>Password Generator</h1>
       </div>
-      <button
-        id="optionButton"
-        class="header__button"
-        onclick="showOrHideModal()"
-      >
-        Options
-      </button>
+      <button id="optionButton" class="header__button" onclick="showOrHideModal()">Options</button>
     </div>
 
     <div class="content">
@@ -34,13 +23,10 @@
       <br />
       <button onclick="copyPassword()">Copy</button>
       <br />
-      <div
-        id="optionModal"
-        class="option__modalContainer option__modalContainer--hide"
-      >
+      <div id="optionModal" class="option__modalContainer option__modalContainer--hide">
         <div class="option__modalContent">
           Length
-          <select id="length" style="font-size: 25px;">
+          <select id="length" style="font-size: 25px">
             <option>30</option>
             <option>16</option>
             <option>5</option>
@@ -60,11 +46,9 @@
             <option>60</option>
           </select>
           <br />
-          <input type="checkbox" name="small" id="small" checked /> Lowercase
-          characters <small>abcdef...</small>
+          <input type="checkbox" name="small" id="small" checked /> Lowercase characters <small>abcdef...</small>
           <br />
-          <input type="checkbox" name="big" id="big" checked /> Uppercase
-          characters <small>ABCDEF...</small>
+          <input type="checkbox" name="big" id="big" checked /> Uppercase characters <small>ABCDEF...</small>
           <br />
           <input type="checkbox" name="number" id="number" checked /> Numbers
           <small>123456...</small>
@@ -76,13 +60,7 @@
           <small>*()_+{}:<>?[]</small>
           <br />
           <div>
-            <button
-              id="optionButton"
-              class="option__button"
-              onclick="showOrHideModal()"
-            >
-              Save
-            </button>
+            <button id="optionButton" class="option__button" onclick="showOrHideModal()">Save</button>
           </div>
         </div>
       </div>

@@ -1,9 +1,15 @@
-const checkboxSmall = document.getElementById('small');
-const checkboxBig = document.getElementById('big');
-const checkboxSpecialSymbol = document.getElementById('special');
-const checkboxSymbol = document.getElementById('symbol');
-const checkboxNumber = document.getElementById('number');
-const passwordInput = document.getElementById('pass');
-const passwordLength = document.getElementById('length').value;
-const optionButton = document.getElementById('optionButton');
-const optionModal = document.getElementById('optionModal');
+let checkboxSmall = document.getElementById('small');
+let checkboxBig = document.getElementById('big');
+let checkboxSpecialSymbol = document.getElementById('special');
+let checkboxSymbol = document.getElementById('symbol');
+let checkboxNumber = document.getElementById('number');
+let passwordInput = document.getElementById('pass');
+
+let passwordLengthElement = document.getElementById('length');
+let passwordLength = 30;
+passwordLengthElement.addEventListener('change', () => {
+  passwordLength = passwordLengthElement.value;
+});
+
+let optionButton = document.getElementById('optionButton');
+let optionModal = document.getElementById('optionModal');
